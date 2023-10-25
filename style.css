@@ -132,7 +132,13 @@ footer p {
     margin: 0;
     font-size: 1rem;
 }
+/* Adjust styling for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+    section {
+        padding: 1.5rem 0; /* Reduce padding for smaller screens */
+    }
 
+}
 
 
 
