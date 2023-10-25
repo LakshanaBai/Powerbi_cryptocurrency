@@ -1,0 +1,139 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.portfolio-header {
+    background-color: #121212;
+    text-align: center;
+    color: #fff;
+    padding: 4rem 0;
+}
+
+.portfolio-header .left-image {
+    width: 130px;
+    height: 180px;
+    border: none;
+    float: left;
+    margin-right: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    text-align: center;
+}
+
+.portfolio-header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #333;
+}
+
+/* Add separate backgrounds for each section */
+section#about {
+    background-color: #d7d7d7; /* Light gray background for the "About Me" section */
+}
+
+section#education {
+    background-color: #9a9a9a; /* Slightly darker gray background for the "Education" section */
+}
+
+section#skills {
+    background-color: #7d7c7c; /* Even darker gray background for the "Skills" section */
+}
+
+section#project {
+    background-color: #434343; /* Dark gray background for the "Project" section */
+}
+
+section#resume {
+    background-color: #2e2e2e; /* Slightly darker gray background for the "Resume" section */
+}
+
+/* ... (You can add similar styling for other sections if needed) */
+
+section {
+    padding: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Highlight the active section */
+section.active {
+    background-color: #fafaff; /* Change the background color to blue for the active section */
+    color: #fff; /* Change the text color to white for the active section */
+}
+
+/* Smooth scrolling behavior for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 0; /* Increase the padding for top and bottom */
+    height: 500px; /* Set the height to your desired value */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the footer text */
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+
+
+

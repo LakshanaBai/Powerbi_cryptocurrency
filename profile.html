@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lakshana - Portfolio</title>
+</head>
+<body>
+    <header class="portfolio-header">
+        <div class="header-content">
+            <img src="20220812120705_IMG_9085.JPG" alt="Your Image" class="left-image">
+            <div class="text-content">
+                <h1>LAKSHANA.B</h1>
+                <p class="tagline">Computer Science</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">project</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a hardworking college student seeking my first work experience</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>B.Sc Computer Science</h2>
+        <p>Government Arts And Science College Avinashi</p>
+    </section>
+
+    <!--Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>JAVA</li>
+          <li>PYTHON</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>LINUX</li>
+        </ul>  
+    </section>
+
+    <!-- project Section -->
+    <section id="project">
+        <h2>Project</h2>
+        <ul>
+         <li>face recognition in AI</li>
+         <li>Digital portfolio in wed development</li>
+        </ul>
+    </section>
+
+    <section id="resume">
+        <center>
+          <h2>Resume</h2>
+          <a href="laksresume1.pdf">Download Resume</a>
+        </center>
+      </section>
+  <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Lakshana - Portfolio</p>
+        </div>
+  </footer>
+      
+
+<script>
+    // Function to handle smooth scrolling
+    function smoothScroll(target, duration) {
+        const targetSection = document.querySelector(target);
+        const targetPosition = targetSection.offsetTop;
+
+        window.scroll({
+            top: targetPosition,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Function to highlight the active section
+    function setActiveSection() {
+        const sections = document.querySelectorAll('section');
+
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (window.scrollY >= sectionTop - sectionHeight / 2) {
+                sections.forEach((s) => s.classList.remove('active'));
+                section.classList.add('active');
+            }
+        });
+    }
+
+    // Smooth scroll when a navigation link is clicked
+    document.querySelectorAll('nav a').forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            smoothScroll(link.getAttribute('href'), 1000); // Adjust duration as needed
+        });
+    });
+
+    // Highlight the active section when scrolling
+    window.addEventListener('scroll', setActiveSection);
+
+    // Initial call to setActiveSection to highlight the correct section on page load
+    setActiveSection();
+</script>
+</body>
+</html>
+
